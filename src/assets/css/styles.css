@@ -1,44 +1,55 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    overflow: hidden;
+  overflow: hidden;
 }
 .wrapper {
-    width: 100vw;
-    height: 100vh;
-    background-color: #eee;
+  width: 100vw;
+  height: 100vh;
+  background-color: #eee;
 }
 
 .d-flex {
-    display: flex;
-    position: relative;
+  display: flex;
+  position: relative;
 }
 
 .is-row {
-    flex-direction: row;
-    position: relative;
+  flex-direction: row;
+  position: relative;
 }
 
 .column {
-    flex: 1;
+  flex: 1;
 }
 
 .editor-section {
-    background-color: tomato;
+  background-color: tomato;
 }
 
 .content-section {
-    background-color: gold;
+  background-color: gold;
 }
 
 .h-100 {
-    height: 100%;
+  height: 100%;
 }
 
 .overflow-scroll {
-    overflow: scroll;
+  overflow: scroll;
+}
+
+.ReactCodeMirror {
+  height: calc(100vh - 3.25rem);
+  width: 100%;
+  max-width: 50vw;
+}
+
+.CodeMirror {
+  height: 100%;
+  padding: 10px;
 }
