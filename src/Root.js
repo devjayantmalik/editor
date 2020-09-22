@@ -1,5 +1,6 @@
 import React from "react";
+import EditorPage from "./EditorPage";
 
-const Root = () => <h1>Root!</h1>;
+const Root = () => <EditorPage />;
 
 export default Root;
