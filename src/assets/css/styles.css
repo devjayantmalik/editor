@@ -41,12 +41,13 @@ body {
 
 .overflow-scroll {
   overflow: scroll;
+  scroll-behavior: auto;
 }
 
 .ReactCodeMirror {
   height: calc(100vh - 3.25rem);
   width: 100%;
-  max-width: 50vw;
+  /* max-width: 50vw; */
 }
 
 .CodeMirror {

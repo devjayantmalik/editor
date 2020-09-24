@@ -29,7 +29,7 @@ let code = `console.log("Hello, World!");
 // This is really great language.`;
 
 const EditorSection = () => (
-  <section className="column editor-section h-100 p-0">
+  <section className="editor-section h-100 p-0">
     <EditorMenu />
     <div
       id="editor"

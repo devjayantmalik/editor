@@ -1,14 +1,25 @@
 import React from "react";
-
+import SplitPane from "react-split-pane";
 import OutputSection from "./components/OutputSection";
 import EditorSection from "./components/EditorSection";
 
+const resizerStyles = {
+  width: 6,
+  backgroundColor: "black",
+  cursor: "col-resize",
+};
+
 const EditorPage = () => {
   return (
-    <div className="d-flex is-row h-100">
+    <SplitPane
+      split="vertical"
+      defaultSize="100vh"
+      allowResize
+      resizerStyle={resizerStyles}
+    >
       <EditorSection />
       <OutputSection />
-    </div>
+    </SplitPane>
   );
 };
 
