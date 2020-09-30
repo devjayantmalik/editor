@@ -1,6 +1,9 @@
 import React from "react";
+import { connect } from "react-redux";
+import constants from "../../store/modals/constants";
+import { setModalState } from "../../store/modals/actions";
 
-const AccountMenu = () => {
+const AccountMenu = ({ setModalState }) => {
   return (
     <>
       <a href="javascript:;" className="navbar-link is-arrowless">
@@ -15,7 +18,11 @@ const AccountMenu = () => {
           Connect Google
         </a>
         <hr className="dropdown-divider" />
-        <a href="javascript:;" className="navbar-item">
+        <a
+          href="#"
+          className="navbar-item"
+          onClick={() => setModalState(constants.LOGIN, true)}
+        >
           Login via Email
         </a>
         <a href="javascript:;" className="navbar-item">
@@ -33,4 +40,4 @@ const AccountMenu = () => {
   );
 };
 
-export default AccountMenu;
+export default connect(null, { setModalState })(AccountMenu);

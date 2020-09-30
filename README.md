@@ -2,6 +2,10 @@
 
 A text editor based by [developbharat.com](https://developbharat.com)
 
+## TODO
+
+- Add `initialState` to redux store to persist changes and data.
+
 ## Features
 
 - Font of your choice
