@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 
 const Modal = ({ children, onClose, title }) => {
@@ -8,6 +8,7 @@ const Modal = ({ children, onClose, title }) => {
       <div class="modal-card">
         <header class="modal-card-head">
           <p class="modal-card-title">{title}</p>
+          <button className="modal-close is-large" onClick={onClose}></button>
         </header>
         {children}
       </div>
