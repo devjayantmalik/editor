@@ -3,12 +3,12 @@ import React from "react";
 const EditMenu = () => {
   return (
     <>
-      <a href="javascript:;" className="navbar-link is-arrowless">
+      <a href="#" className="navbar-link is-arrowless">
         Edit
       </a>
 
       <div className="navbar-dropdown">
-        <a href="javascript:;" className="navbar-item">
+        <a href="#" className="navbar-item">
           Font
         </a>
         <a href="javascript:;" className="navbar-item">
