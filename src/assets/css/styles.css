@@ -54,3 +54,10 @@ body {
   height: 100%;
   padding: 10px;
 }
+
+.input::placeholder {
+  background-color: #eee;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 400;
+}

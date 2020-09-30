@@ -1,23 +1,26 @@
-import React, { useState } from "react";
+import React from "react";
 import Modal from "./Modal";
 import { connect } from "react-redux";
 import { setModalState } from "../store/modals/actions";
 import constants from "../store/modals/constants";
+import LoginForm from "../forms/LoginForm";
 
 const LoginModal = ({ isVisible, setModalState }) => {
   if (!isVisible) return null;
 
+  const handleModalClose = () => {
+    setModalState(constants.LOGIN, false);
+  };
+
   return (
-    <Modal
-      onClose={() => setModalState(constants.LOGIN, false)}
-      title="Login via Email"
-    >
+    <Modal onClose={handleModalClose} title="Login via Email">
       <section class="modal-card-body">
-        <h1>Hello Modal</h1>
+        <LoginForm />
       </section>
       <footer class="modal-card-foot">
-        <button class="button is-success">Save changes</button>
-        <button class="button">Cancel</button>
+        <button class="button is-danger" onClick={handleModalClose}>
+          Close
+        </button>
       </footer>
     </Modal>
   );
